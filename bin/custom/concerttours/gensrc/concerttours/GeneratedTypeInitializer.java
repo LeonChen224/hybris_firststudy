@@ -47,20 +47,20 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 	
 	
 		createItemType(
-			"Band",
-			"GenericItem",
-			concerttours.jalo.Band.class,
-			"de.hybris.platform.persistence.concerttours_Band",
+			"Concert",
+			"VariantProduct",
+			concerttours.jalo.Concert.class,
+			null,
 			false,
 			null,
 			false
 		);
 	
 		createItemType(
-			"Concert",
-			"VariantProduct",
-			concerttours.jalo.Concert.class,
-			null,
+			"Band",
+			"GenericItem",
+			concerttours.jalo.Band.class,
+			"de.hybris.platform.persistence.concerttours_Band",
 			false,
 			null,
 			false
@@ -101,6 +101,12 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 
 	
 	
+				single_createattr_Concert_venue();
+			
+				single_createattr_Concert_date();
+			
+				single_createattr_Concert_concertType();
+			
 				single_createattr_Product_hashtag();
 			
 				single_createattr_Band_code();
@@ -110,12 +116,6 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 				single_createattr_Band_history();
 			
 				single_createattr_Band_albumSales();
-			
-				single_createattr_Concert_venue();
-			
-				single_createattr_Concert_date();
-			
-				single_createattr_Concert_concertType();
 			
 		createRelationAttributes(
 			"Product2RockBand", 
@@ -160,6 +160,57 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 
 	}
 
+	
+	public void single_createattr_Concert_venue() throws JaloBusinessException
+	{
+		
+						Map sqlColumnDefinitions = null;
+					
+				createPropertyAttribute(
+					"Concert", 
+					"venue",  
+					null,
+					"java.lang.String",
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
+					null,
+					sqlColumnDefinitions
+				);
+			
+	}
+	
+	public void single_createattr_Concert_date() throws JaloBusinessException
+	{
+		
+						Map sqlColumnDefinitions = null;
+					
+				createPropertyAttribute(
+					"Concert", 
+					"date",  
+					null,
+					"java.util.Date",
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
+					null,
+					sqlColumnDefinitions
+				);
+			
+	}
+	
+	public void single_createattr_Concert_concertType() throws JaloBusinessException
+	{
+		
+						Map sqlColumnDefinitions = null;
+					
+				createPropertyAttribute(
+					"Concert", 
+					"concertType",  
+					null,
+					"ConcertType",
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
+					null,
+					sqlColumnDefinitions
+				);
+			
+	}
 	
 	public void single_createattr_Product_hashtag() throws JaloBusinessException
 	{
@@ -246,57 +297,6 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			
 	}
 	
-	public void single_createattr_Concert_venue() throws JaloBusinessException
-	{
-		
-						Map sqlColumnDefinitions = null;
-					
-				createPropertyAttribute(
-					"Concert", 
-					"venue",  
-					null,
-					"java.lang.String",
-					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
-					null,
-					sqlColumnDefinitions
-				);
-			
-	}
-	
-	public void single_createattr_Concert_date() throws JaloBusinessException
-	{
-		
-						Map sqlColumnDefinitions = null;
-					
-				createPropertyAttribute(
-					"Concert", 
-					"date",  
-					null,
-					"java.util.Date",
-					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
-					null,
-					sqlColumnDefinitions
-				);
-			
-	}
-	
-	public void single_createattr_Concert_concertType() throws JaloBusinessException
-	{
-		
-						Map sqlColumnDefinitions = null;
-					
-				createPropertyAttribute(
-					"Concert", 
-					"concertType",  
-					null,
-					"ConcertType",
-					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
-					null,
-					sqlColumnDefinitions
-				);
-			
-	}
-	
 
 
 	/**
@@ -367,6 +367,25 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 				{
 				Map customPropsMap = new HashMap();
 				
+				setItemTypeProperties(
+					"Concert",
+					false,
+					true,
+					true,
+					null,
+					customPropsMap
+				);
+				}
+			
+			single_setAttributeProperties_Concert_venue();
+		
+			single_setAttributeProperties_Concert_date();
+		
+			single_setAttributeProperties_Concert_concertType();
+		
+				{
+				Map customPropsMap = new HashMap();
+				
 				changeMetaType(
 					"Product",
 					null,
@@ -397,25 +416,6 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 		
 			single_setAttributeProperties_Band_albumSales();
 		
-				{
-				Map customPropsMap = new HashMap();
-				
-				setItemTypeProperties(
-					"Concert",
-					false,
-					true,
-					true,
-					null,
-					customPropsMap
-				);
-				}
-			
-			single_setAttributeProperties_Concert_venue();
-		
-			single_setAttributeProperties_Concert_date();
-		
-			single_setAttributeProperties_Concert_concertType();
-		
 				setDefaultProperties(
 					"ConcertType",
 					true,
@@ -434,6 +434,72 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 
 
 		
+						public void single_setAttributeProperties_Concert_venue() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"Concert", 
+								"venue",
+								false, 
+								null,
+								null,
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								null
+							);
+						}
+					
+						public void single_setAttributeProperties_Concert_date() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"Concert", 
+								"date",
+								false, 
+								null,
+								null,
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								null
+							);
+						}
+					
+						public void single_setAttributeProperties_Concert_concertType() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"Concert", 
+								"concertType",
+								false, 
+								null,
+								null,
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								null
+							);
+						}
+					
 						public void single_setAttributeProperties_Product_hashtag() throws JaloBusinessException
 						{
 							
@@ -532,72 +598,6 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 							setAttributeProperties(
 								"Band", 
 								"albumSales",
-								false, 
-								null,
-								null,
-								null,
-								true,
-								true,
-								null,
-								customPropsMap,
-								null
-							);
-						}
-					
-						public void single_setAttributeProperties_Concert_venue() throws JaloBusinessException
-						{
-							
-							
-							
-							Map customPropsMap = new HashMap();
-							
-							setAttributeProperties(
-								"Concert", 
-								"venue",
-								false, 
-								null,
-								null,
-								null,
-								true,
-								true,
-								null,
-								customPropsMap,
-								null
-							);
-						}
-					
-						public void single_setAttributeProperties_Concert_date() throws JaloBusinessException
-						{
-							
-							
-							
-							Map customPropsMap = new HashMap();
-							
-							setAttributeProperties(
-								"Concert", 
-								"date",
-								false, 
-								null,
-								null,
-								null,
-								true,
-								true,
-								null,
-								customPropsMap,
-								null
-							);
-						}
-					
-						public void single_setAttributeProperties_Concert_concertType() throws JaloBusinessException
-						{
-							
-							
-							
-							Map customPropsMap = new HashMap();
-							
-							setAttributeProperties(
-								"Concert", 
-								"concertType",
 								false, 
 								null,
 								null,

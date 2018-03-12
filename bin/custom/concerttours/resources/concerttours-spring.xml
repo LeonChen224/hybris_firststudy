@@ -79,6 +79,10 @@
 	      	            !execution(* getPK(..))" />  	            
 	       <aop:pointcut id="profiledMethods" expression="execution(* *(..))" />	
 	  -->
+	  
+	<bean id="ConcerttoursCustomSetup" class="concerttours.setup.ConcerttoursCustomSetup" >
+		<property name="importService" ref="importService"/>
+	</bean>
 	
 			
 			
