@@ -83,6 +83,11 @@
 	<bean id="ConcerttoursCustomSetup" class="concerttours.setup.ConcerttoursCustomSetup" >
 		<property name="importService" ref="importService"/>
 	</bean>
+
+	<alias name = "defaultBandService" alias = "bandService" />
+	<bean id = "defaultBandService" class = "concerttours.service.impl.DefaultBandService" >
+		<property name = "bandDAO" ref = "bandDAO" />
+	</bean>
 	
 			
 			
