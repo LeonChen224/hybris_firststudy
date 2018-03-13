@@ -21,12 +21,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="concerttours-spring.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="concerttours-spring.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/concerttours/resources/concerttours-spring.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="86" column="25" lean-forward="false" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultBandDAOIntegrationTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/concerttours/src/concerttours/service/impl/DefaultBandDAOIntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="77" column="1" lean-forward="false" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultBandServiceIntegrationTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/concerttours/src/concerttours/service/impl/DefaultBandServiceIntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1109">
+              <caret line="88" column="1" lean-forward="false" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1834#1835#0" expanded="true" />
+                <element signature="e#1887#1888#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,6 +68,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/concerttours/resources/concerttours-spring.xml" />
+        <option value="$PROJECT_DIR$/concerttours/src/concerttours/service/impl/DefaultBandDAOIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/concerttours/src/concerttours/service/impl/DefaultBandServiceIntegrationTest.java" />
       </list>
     </option>
   </component>
@@ -158,14 +186,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="concerttours" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="custom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="concerttours" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="concerttours" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -174,7 +194,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.startup.StartupConfigurable" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="nodejs_interpreter_path" value="D:/app/node/nodejs/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -286,12 +306,12 @@
       <option name="presentableId" value="Default" />
       <updated>1520588803304</updated>
       <workItem from="1520588805450" duration="100000" />
-      <workItem from="1520911070485" duration="487000" />
+      <workItem from="1520911070485" duration="1218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="587000" />
+    <option name="totallyTimeSpent" value="1318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -359,6 +379,28 @@
         <state relative-caret-position="289">
           <caret line="86" column="25" lean-forward="false" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concerttours/src/concerttours/service/impl/DefaultBandDAOIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="77" column="1" lean-forward="false" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concerttours/src/concerttours/service/impl/DefaultBandServiceIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1109">
+          <caret line="88" column="1" lean-forward="false" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1834#1835#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
